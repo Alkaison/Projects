@@ -4,7 +4,7 @@ This website contains the list of all my projects ranging from web applications,
 
 ## Checkout :tada:
 
-The webpage is live with the help of GitHub pages and you can visit it here: https://Alkaison.github.io/Projects 
+The webpage is live with the help of GitHub pages and you can visit it here: https://alkaison.github.io/Projects/
 
 ## Features
 
@@ -424,4 +424,4 @@ If you have any feedback or want to talk with me, please reach out at [Discord](
 
 ## LICENSE
 
-This work is published under [MIT](https://github.com/Alkaison/Projectss/blob/main/LICENSE) License.
+This work is published under [MIT](https://github.com/Alkaison/Projectss/blob/main/LICENSE "LICENSE") License.
