@@ -19,9 +19,36 @@ The webpage is live with the help of GitHub pages and you can visit it here: htt
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <meta name="keywords" content="your, tags"/>
+    <meta property="og:title" content="Alkaison’s Project">
+    <meta name="description" content="This website contains the list of all projects ranging from web applications, design and software development made by Ganesh Mourya - Alkaison."/>
+    <meta name="subject" content="This website contains the list of all projects ranging from web applications, design and software development made by Ganesh Mourya - Alkaison.">
+    <meta name="copyright"content="Alkaison">
+    <meta name="language" content="EN">
+    <meta property="og:description" content="This website contains the list of all projects ranging from web applications, design and software development made by Ganesh Mourya - Alkaison.">
+    <meta property="og:locale" content="en">
+    <meta name="topic" content="project, development, github, website, developer, dev">
+    <meta name="Classification" content="portfolio">
+    <meta name="author" content="Alkaison">
+    <meta name="designer" content="Alkaison">
+    <meta property="og:site_name" content="Alkaison’s Projects">
+    <meta property="og:type" content="website">
+    <meta name="twitter:site" content="@alkaison">
+    <meta name="twitter:creator" content="@alkaison">
+    <meta name="copyright" content="Alkaison">
+    <meta name="reply-to" content="505ganeshmourya@gmail.com">
+    <meta name="owner" content="Alkaison">
+    <meta name="url" content="https://alkaison.github.io/Projects/">
+    <meta name="identifier-URL" content="https://alkaison.github.io/Projects/">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Alkaison’s Projects</title>
     <!-- Font Awesome Link for Icons -->
     <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -35,7 +62,7 @@ The webpage is live with the help of GitHub pages and you can visit it here: htt
         <nav>
             <div class="logo"><span class="dot">Pro</span>jects<span class="dot">_</span></div>
             <div class="links">
-                <a href="https://github.com/alkaison" target="_blank"><i class="fa-brands fa-github" title="GitHub Profile"></i></a>
+                <a href="https://github.com/Alkaison/Projects" target="_blank"><i class="fa-brands fa-github" title="GitHub Project"></i></a>
                 <a href="https://linkedin.com/in/alkaison" target="_blank"><i class="fa-brands fa-linkedin" title="LinkedIn Profile"></i></a>
                 <a href="https://twitter.com/alkaison" target="_blank"><i class="fa-brands fa-twitter" title="Twitter Profile"></i></a>
             </div>
@@ -44,12 +71,15 @@ The webpage is live with the help of GitHub pages and you can visit it here: htt
             <h2 class="head-text">Explore the World of projects!</h2>
             <p class="body-text">This webpage showcases all of my projects, ranging from web application, designs to software development.</p>
             <div class="btn">
-                <button class="btn1" title="coming soon">Download Resume</button>
-                <button class="btn2" title="coming soon">portfolio</button>
+                <a href="https://github.com/Alkaison/Projects"><button class="btn1" title="Contribute on GitHub">Contribute</button></a>
+                <a href="#project-txt"><button class="btn2" title="Checkout Projects">Check Projects</button></a>
             </div>
         </section>
     </div>
-    <div class="projects-container">
+    <div class="project-txt" style="text-align: center;" id="project-txt">
+        List of cool🔥Projects
+    </div>
+    <div class="projects-container" id="project-box">
         <div class="project-card">
             <div class="link-container">
                 <a href="https://github.com/Alkaison/Phonebook-Management-System" target="_blank"><i class="fa-brands fa-github github"></i></a> 
@@ -161,7 +191,7 @@ The webpage is live with the help of GitHub pages and you can visit it here: htt
     </div>
     <footer class="ft-container">
         <hr size="5" color="#3c1053">
-        <p class="ft-text">Made with 🧠 by <a href="https://github.com/Alkaison" target="_blank" title="Alkaison" style="text-decoration: none; margin: 0px;">Alkaison</a></p>
+        <p class="ft-text">Made with 💛 by <a href="https://github.com/Alkaison" target="_blank" title="Alkaison" style="text-decoration: none; margin: 0px;">Alkaison</a>!</p>
     </footer>
 </body>
 </html>
@@ -178,9 +208,9 @@ The webpage is live with the help of GitHub pages and you can visit it here: htt
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 body{
-    scroll-behavior: smooth;
     background-color: #e6f7ff;
 }
 .nav-container{
@@ -225,7 +255,7 @@ nav{
     justify-content: center;
     margin-top: -50px;
 }
-.head-text{
+.head-text, .project-txt{
     font-family: Teko, sans-serif;
     font-size: 50px;
     font-weight: 400;
@@ -344,7 +374,7 @@ nav{
 }
 /* Media Query - Tablet Devices */
 @media only screen and (max-width: 768px){
-    .head-text{
+    .head-text, .project-txt{
         font-size: 40px;
     }
     .body-text{
@@ -379,7 +409,7 @@ nav{
     .links a{
         font-size: 25px;
     }
-    .head-text{
+    .head-text, .project-txt{
         font-size: 30px;
     }
     .ft-text, .ft-text a{
