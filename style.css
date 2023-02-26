@@ -6,9 +6,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 body{
-    scroll-behavior: smooth;
     background-color: #e6f7ff;
 }
 .nav-container{
@@ -53,7 +53,7 @@ nav{
     justify-content: center;
     margin-top: -50px;
 }
-.head-text{
+.head-text, .project-txt{
     font-family: Teko, sans-serif;
     font-size: 50px;
     font-weight: 400;
@@ -172,7 +172,7 @@ nav{
 }
 /* Media Query - Tablet Devices */
 @media only screen and (max-width: 768px){
-    .head-text{
+    .head-text, .project-txt{
         font-size: 40px;
     }
     .body-text{
@@ -207,7 +207,7 @@ nav{
     .links a{
         font-size: 25px;
     }
-    .head-text{
+    .head-text, .project-txt{
         font-size: 30px;
     }
     .ft-text, .ft-text a{
