@@ -31,14 +31,24 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta content="yes" name="apple-touch-fullscreen" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Title -->
     <title>Alkaison’s Projects</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Font Awesome Link for Icons -->
     <script src="https://kit.fontawesome.com/5289663089.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="nav-container">
@@ -48,18 +58,20 @@
                 <a href="https://github.com/Alkaison/Projects" target="_blank"><i class="fa-brands fa-github" title="GitHub Project"></i></a>
                 <a href="https://linkedin.com/in/alkaison" target="_blank"><i class="fa-brands fa-linkedin" title="LinkedIn Profile"></i></a>
                 <a href="https://twitter.com/alkaison" target="_blank"><i class="fa-brands fa-twitter" title="Twitter Profile"></i></a>
+                <a><i class="fas fa-sun dark-btn" id="toggleTheme"></i></a>
+                <!-- <a><i class="fas fa-sun"></i></a> -->
             </div>
         </nav>
         <section class="nav-text">
             <h2 class="head-text">Explore the World of projects!</h2>
             <p class="body-text">This webpage showcases all of my projects, ranging from web application, designs to software development.</p>
             <div class="btn">
-                <a href="https://github.com/Alkaison/Projects"><button class="btn1" title="Contribute on GitHub">Contribute</button></a>
-                <a href="#project-txt"><button class="btn2" title="Checkout Projects">Check Projects</button></a>
+                <a href="https://github.com/Alkaison/Projects/fork"><button class="btn1" title="Contribute on GitHub">Fork</button></a>
+                <a href="#projects"><button class="btn2" title="Checkout Projects">Projects</button></a>
             </div>
         </section>
     </div>
-    <div class="project-txt" style="text-align: center;" id="project-txt">
+    <div class="project-txt" style="text-align: center;" id="projects">
         List of cool🔥Projects
     </div>
     <div class="projects-container" id="project-box">

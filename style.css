@@ -1,6 +1,17 @@
 /* Google Font - Teko */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 
+:root {
+    /* dark theme */
+    --text-color: #e6f7ff;
+    --bg-color: #1C1C1E;
+}
+
+.light-theme {
+    color: #000513;
+    background-color: #e6f7ff;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +41,10 @@ nav{
     font-size: 30px;
     color: #000513;
     cursor: pointer;
+}
+.dark-btn {
+    width: 40px;
+    height: 40px;
 }
 .dot{
     font-family: Teko, sans-serif;
