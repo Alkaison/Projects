@@ -3,13 +3,14 @@
 
 :root {
     /* dark theme */
-    --text-color: #e6f7ff;
-    --bg-color: #1C1C1E;
+    --text-color: #DDDDDD;
+    --bg-color: #1D2A35;
+    --sub-text: #9CA3AF;
 }
-
 .light-theme {
-    color: #000513;
-    background-color: #e6f7ff;
+    --text-color: #1D2A35;
+    --bg-color: #e6f7ff;
+    --sub-text: #1D2A35;
 }
 
 *{
@@ -20,7 +21,7 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #e6f7ff;
+    background-color: var(--bg-color);
 }
 .nav-container{
     width: 100%;
@@ -39,7 +40,7 @@ nav{
     font-weight: 800;
     text-transform: uppercase;
     font-size: 30px;
-    color: #000513;
+    color: var(--text-color);
     cursor: pointer;
 }
 .dark-btn {
@@ -55,13 +56,13 @@ nav{
 }
 .links a{
     font-size: 30px;
-    color: #000513;
+    color: var(--text-color);
     letter-spacing: 20px;
 }
 .nav-text{
     height: 100vh;
     display: flex;
-    color: #3c1053;
+    color: var(--text-color);
     text-align: center;
     align-items: center;
     flex-direction: column;
@@ -73,31 +74,35 @@ nav{
     font-size: 50px;
     font-weight: 400;
     text-transform: capitalize;
+    color: var(--text-color);
 }
 .body-text{
     font-size: 20px;
     font-weight: 500;
     margin: 0 75px;
+    color: var(--sub-text);
 }
 .btn{
     margin: 25px;
 }
-.btn1, .btn2{
-    font-family: Teko, sans-serif;
+.btn1{
+    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
-    background-color: #4CAF50; /* Green background color */
-    color: #3c1053; /* Text color */
+    background-color: #04AA6D; /* Green background color */
+    color: #ffffff; /* Text color */
     border: none; /* Remove button border */
-    padding: 12px 24px; /* Add padding to make the button easier to click */
-    font-size: 18px; /* Set font size */
-    border-radius: 5px; /* Add rounded corners */
+    padding: 13px 16px; /* Add padding to make the button easier to click */
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px; /* Add rounded corners */
     cursor: pointer; /* Change cursor to pointer on hover */
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* Add a drop shadow */
-    transition: background-color 0.3s ease; /* Add a transition effect to the background color */
+    transition: background-color 0.4s ease; /* Add a transition effect to the background color */
     margin: 0 15px;
+    width: 150px;
 }
-.btn1:hover, .btn2:hover{
-    background-color: #3e8e41; /* Darker green on hover */
+.btn1:hover{
+    background-color: #3c1053; /* Darker green on hover */
 }
 .card-container{
     display: grid;
@@ -122,7 +127,7 @@ nav{
 .ft-text, .ft-text a{
     font-family: Teko, sans-serif;
     font-size: 20px;
-    color: #3c1053;
+    color: var(--text-color);
     font-weight: 400;
     margin: 20px;
 }
@@ -134,7 +139,7 @@ nav{
     margin: 50px 0;
 }
 .project-card {
-    background-color: #fff;
+    background-color: var(--bg-color);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 350px;
@@ -152,7 +157,7 @@ nav{
     font-size: 30px;
 }
 .project-card p{
-    color: #7b7d7d;
+    color: var(--text-color);
     font-family: Verdana, sans-serif;
 }
 .project-card span{
@@ -160,7 +165,7 @@ nav{
     bottom: 0;
     left: 0;
     margin: 15px 20px;
-    color: #3c1053;
+    color: var(--text-color);
     font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: 200;
@@ -173,7 +178,7 @@ nav{
 .link-container a{
     margin: 5px 5px;
     text-decoration: none;
-    color: #3c1053;
+    color: var(--text-color);
 }
 .link-container a:hover, .github:hover, .links:hover{
     color: red;
