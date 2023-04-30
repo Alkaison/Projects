@@ -145,10 +145,10 @@ nav{
     width: 350px;
     padding: 20px;
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 }  
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.03);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .project-card h3{
