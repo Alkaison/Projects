@@ -8,9 +8,10 @@ The webpage is live with the help of GitHub pages and you can visit it here: htt
 
 ## Features
 
-- [x] Responsive Design
-- [ ] Dark Theme
-- [ ] Theme Changing button
+- [x] Responsive design
+- [x] Dark theme
+- [x] Theme toggle button (Dark/Light) 
+- [ ] Modern card design
 
 ## Feedback
 

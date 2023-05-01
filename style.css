@@ -22,6 +22,7 @@
 }
 body{
     background-color: var(--bg-color);
+    transition: background-color 0.4s linear, color 0.4s linear;
 }
 .nav-container{
     width: 100%;
