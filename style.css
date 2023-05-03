@@ -139,6 +139,7 @@ nav{
     gap: 20px;
     margin: 50px 0;
 }
+/* old card UI 
 .project-card {
     background-color: var(--bg-color);
     border-radius: 10px;
@@ -147,7 +148,21 @@ nav{
     padding: 20px;
     position: relative;
     transition: all 0.3s ease;
-}  
+}   */
+/* New card UI */
+.project-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
 .project-card:hover {
     transform: scale(1.02);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -192,13 +207,13 @@ nav{
     font-size: 25px;
 }
 /* Media Query - Projects Container */
-@media only screen and (max-width: 1175px) {
+@media only screen and (max-width: 1400px) {
     .projects-container {
         grid-template-columns: auto auto;
     }
 }
 /* Media Query - Tablet Devices */
-@media only screen and (max-width: 810px){
+@media only screen and (max-width: 950px){
     .head-text, .project-txt{
         font-size: 40px;
     }
