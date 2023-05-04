@@ -1,16 +1,33 @@
 /* Google Font - Teko */
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
 
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 2rem;
+}
+
+/* Theme Colors */
 :root {
     /* dark theme */
     --text-color: #DDDDDD;
     --bg-color: #1D2A35;
     --sub-text: #9CA3AF;
+    --scrollbar-track: #1D2A35;
+    --scrollbar-thumb: #FF9D2E;
 }
 .light-theme {
     --text-color: #1D2A35;
     --bg-color: #e6f7ff;
     --sub-text: #1D2A35;
+    --scrollbar-track: #e6f7ff;
+    --scrollbar-thumb: #FF9D2E;
 }
 
 *{
