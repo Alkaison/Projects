@@ -15,7 +15,7 @@
 
 /* Theme Colors */
 :root {
-    /* dark theme */
+    /* dark theme (default) */
     --text-color: #DDDDDD;
     --bg-color: #1D2A35;
     --sub-text: #9CA3AF;
@@ -41,6 +41,8 @@ body{
     background-color: var(--bg-color);
     transition: background-color 0.4s linear, color 0.4s linear;
 }
+
+/* NavBar CSS */
 .nav-container{
     width: 100%;
     min-height: 100vh;
@@ -122,33 +124,8 @@ nav{
 .btn1:hover{
     background-color: #3c1053; /* Darker green on hover */
 }
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-content: center;
-    border: 3px solid blue;
-    padding: 50px;
-}
-.card{
-    border: 3px solid red;
-    border-radius: 25px;
-    margin: 50px;
-    padding: 15px;
-}
-.ft-container{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 75px;
-}
-.ft-text, .ft-text a{
-    font-family: Teko, sans-serif;
-    font-size: 20px;
-    color: var(--text-color);
-    font-weight: 400;
-    margin: 20px;
-}
+
+/* Projects Card CSS */
 .projects-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -156,17 +133,6 @@ nav{
     gap: 20px;
     margin: 50px 0;
 }
-/* old card UI 
-.project-card {
-    background-color: var(--bg-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 350px;
-    padding: 20px;
-    position: relative;
-    transition: all 0.3s ease;
-}   */
-/* New card UI */
 .project-card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -223,6 +189,28 @@ nav{
 .links{
     font-size: 25px;
 }
+
+/* Footer CSS */
+.ft-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-weight: bold;
+}
+.ft-link {
+    text-decoration: none;
+    color: #04AA6D;
+}
+.ft-fork {
+    margin-left: 5px;
+    color: #FF9D2E;
+    width: 20px;
+    height: 20px;
+}
+
 /* Media Query - Projects Container */
 @media only screen and (max-width: 1400px) {
     .projects-container {
