@@ -19,6 +19,7 @@
     --text-color: #64FFDA;
     --bg-color: #0A192F;
     --sub-text: #DDDDDD;
+    --languages: #2c3e50;
     --scrollbar-track: #1D2A35;
     --scrollbar-thumb: #FF9D2E;
 }
@@ -26,6 +27,7 @@
     --text-color: #1D2A35;
     --bg-color: #e6f7ff;
     --sub-text: #1D2A35;
+    --languages: #FFFFFF;
     --scrollbar-track: #e6f7ff;
     --scrollbar-thumb: #FF9D2E;
 }
@@ -67,13 +69,14 @@ nav{
 .dark-btn {
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .dot{
     font-family: Teko, sans-serif;
     color: red;
 }
 .links a:hover{
-    color: var(--text-color);
+    color: var(--scrollbar-thumb);
 }
 .links a{
     font-size: 30px;
@@ -97,6 +100,9 @@ nav{
     text-transform: capitalize;
     color: var(--text-color);
 }
+.project-txt {
+    color: var(--scrollbar-thumb);
+}
 .body-text{
     font-size: 20px;
     font-weight: 500;
@@ -115,22 +121,11 @@ nav{
     line-height: 1;
     border-radius: 4px;
     margin: 32px 16px;
-    position: relative;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s;
 }
-.btn1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-color: var(--text-color); */
-    z-index: -1;
-}
-.btn1:hover {
-    transform: translate(-4px, -4px);
+.btn1:active {
+    transform: scale(0.85);
 }
 
 /* Projects Card CSS */
@@ -142,60 +137,68 @@ nav{
     margin: 50px 0;
 }
 .project-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    width: 400px;
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
     padding: 20px;
     position: relative;
-    transition: all 0.3s ease;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
 }
 .project-card:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-.project-card h3{
-    color: red;
-    font-family: Teko, sans-serif;
-    font-size: 30px;
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--scrollbar-thumb);
 }
-.project-card p{
-    color: var(--text-color);
-    font-family: Verdana, sans-serif;
+.project-card p {
+    color: var(--sub-text);
+    font-size: 1rem;
+    margin: 10px 0;
 }
-.project-card span{
+.project-card span {
     position: absolute;
-    bottom: 0;
     left: 0;
-    margin: 15px 20px;
+    bottom: 0;
+    background-color: var(--languages);
     color: var(--text-color);
-    font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-weight: 200;
-    word-spacing: 5px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-.link-container{
-    text-align: right;
-    margin: 5px 0;
+.link-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
 }
-.link-container a{
-    margin: 5px 5px;
+.link-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2c3e50;
     text-decoration: none;
-    color: var(--text-color);
+    color: #fff;
+    transition: all 0.3s ease;
+    margin-left: 6px;
 }
-.link-container a:hover, .github:hover, .links:hover{
-    color: red;
-    cursor: pointer;
+.link-container a:hover {
+    transform: scale(1.1);
 }
-.github{
-    font-size: 30px;
-}
-.links{
-    font-size: 25px;
+.github, .links {
+    font-size: 1.4rem;
 }
 
 /* Footer CSS */
@@ -208,8 +211,26 @@ nav{
     background-color: var(--bg-color);
     font-weight: bold;
 }
+.ft-text {
+    position: relative;
+}
 .ft-text:hover, .ft-text:hover .ft-link {
     color: var(--text-color);
+}
+.ft-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 2px;
+    width: 0;
+    border-radius: 2px;
+    color: #FF9D2E;
+    background-color: #64FFDA;
+    transition: width 0.5s;
+}
+.ft-text:hover::after {
+    width: 100%;
 }
 .ft-link {
     text-decoration: none;
