@@ -244,13 +244,13 @@ nav{
 }
 
 /* Media Query - Projects Container */
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1100px) {
     .projects-container {
         grid-template-columns: auto auto;
     }
 }
 /* Media Query - Tablet Devices */
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 760px){
     .head-text, .project-txt{
         font-size: 40px;
     }
@@ -287,7 +287,7 @@ nav{
         font-size: 25px;
     }
     .links a{
-        font-size: 25px;
+        font-size: 20px;
     }
     .head-text, .project-txt{
         font-size: 30px;
