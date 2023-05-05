@@ -11,7 +11,8 @@ The webpage is live with the help of GitHub pages and you can visit it here: htt
 - [x] Responsive design
 - [x] Dark theme
 - [x] Theme toggle button (Dark/Light) 
-- [ ] Modern card design
+- [x] Modern card design
+- [x] Clean code
 
 ## Feedback
 
